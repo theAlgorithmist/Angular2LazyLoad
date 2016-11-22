@@ -11,7 +11,7 @@ Other features of the application include
   - enforce one-time load of application data when routes are reloaded
   - maintain compile- and run-time immutability of the global store in line with Redux contract
   - completely reactive
-  - components derive from a basline flux component that handles subscribe/unsubscribe to model updates
+  - components derive from a baseline flux component that handles subscribe/unsubscribe to model updates
   - handle route not found (i.e. 404)
   - pay tribute to The Three Stooges
  
