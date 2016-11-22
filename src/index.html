@@ -2,13 +2,24 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title>Lazyload</title>
+  <title>Angular 2 Routing With Lazy Loading</title>
   <base href="/">
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
 </head>
 <body>
-  <app-root>Loading...</app-root>
+
+  <div class="mainContent">
+    <p>Angular 2 Lazy Loading and Flux/Redux-style architecture demo.  (No AOT compilation in this version)</p>
+    <p>Author: Jim Armstrong, <a class="main" href='http://algorithmist.net' target='_blank'>The Algorithmist</a>&nbsp; (and chief knucklehead) nyuk, nyuk, nyuk ...</p>
+  </div>
+
+  <app-root><p class='padded' align='center' aria-label="Loading Three Stooges Application..." role="progressbar"><img src='assets/preloader.gif' width='128' height='128' alt='Loading Three Stooges Application' title='Loading' /></p></app-root>
+
+  <div class="mainContent">
+    &copy; 2016 The Algorithmist.  Why Soitenly!
+  </div>
+
 </body>
 </html>

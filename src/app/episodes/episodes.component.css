@@ -1,0 +1,12 @@
+th
+{
+  background-color: #006699;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.tableContainer
+{
+  height:400px;
+  overflow-y: scroll;
+}

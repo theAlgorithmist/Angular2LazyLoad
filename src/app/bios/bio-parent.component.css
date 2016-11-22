@@ -1,0 +1,27 @@
+div
+{
+  display: inline-block;
+}
+
+a
+{
+  text-decoration: none;
+  color: #3333ff;
+}
+
+a:hover
+{
+  text-decoration: underline;
+}
+
+a:visited
+{
+  color: #333333;
+}
+
+.sub-img
+{
+  float:left;
+  border: 2px solid #3333ff;
+  margin-right:6px;
+}   

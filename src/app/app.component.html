@@ -1,3 +1,25 @@
-<h1>
-  {{title}}
-</h1>
+<!-- Three Stooges demo root component markup -->
+<div class="container-fluid rounded">
+  <nav class="navbar navbar-dark bg-inverse">
+    <div class="container">
+      <div>
+        <strong class="navbar-brand">The Three Stooges</strong>
+      </div>
+      <nav class="nav navbar-inline">
+        <a class="nav-link" [class.disabled]="_loading" href="#" (click)="__onNavClicked('S')" routerLink="script" routerLinkActive="active">The Script</a>
+        <a class="nav-link" [class.disabled]="_loading" href="#" (click)="__onNavClicked('H')" routerLink="history" routerLinkActive="active">History</a>
+        <a class="nav-link" [class.disabled]="_loading" href="#" (click)="__onNavClicked('B')" routerLink="bios" routerLinkActive="active">Bios</a>
+        <a class="nav-link" [class.disabled]="_loading" href="#" (click)="__onNavClicked('E')" routerLink="episodes" routerLinkActive="active">Partial Episode List</a>
+      </nav>
+    </div>
+  </nav>
+
+  <div class='top-margin'></div>
+  <!-- route loading indicator -->
+  <div *ngIf="_loading" class='bordered'>
+    <div class='loadingText' role="progressbar" aria-label="Loading…">Loading content <span class='loading dots2' aria-hidden="true"></span></div>
+  </div>
+  
+  <div class='top-margin'></div>
+  <router-outlet></router-outlet>
+</div>

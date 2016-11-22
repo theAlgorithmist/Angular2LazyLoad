@@ -1,0 +1,19 @@
+<div>
+  <div>
+    <img class="img-responsive sub-img" src='assets/stooges.jpg'>
+    <p align='center'><strong>Three Stooge Bios</strong></p>
+    <p>Moe and Larry were constants, while several different actors protrayed the third Stooge.  Shemp and Curly are the best known and Curly is considered by
+       many to be the most popular third Stooge.  There were also two 'Joes'.  Learn more about each of the actors (not considering the recent film remake), by clicking on their name, below.</p>
+  </div>
+  <div class="top-margin">
+    <p><strong>Three Stooges Actors</strong></p>
+    <div>
+      <ul>
+        <li *ngFor="let n of _names"><a href="#" [routerLink]="['/bios', n.id]">{{n.name}}</a></li>
+      </ul>
+    </div>
+  </div>
+  <div>
+    <router-outlet></router-outlet>
+  </div>
+</div>

@@ -1,0 +1,31 @@
+<div>
+  <div>
+    <p align='center'><strong>Three Stooges Episodes</strong></p>
+    <p>The Stooges starred in a large number of shorts, and even some films.  The lure of The Three Stooges proved to be timeless with the film remake,
+       'The Three Stooges, The Movie' in 2012.  This section provides an abbreviated list of classic films and episodes that starred anywhere from one to three of
+       The Stooges.  In one short, 'Hold That Lion', Moe, Larry, Curly, and Shemp all appeared in the same episode.</p>
+  </div>
+  <div>
+    <p><strong>Three Stooges Episodes</strong></p>
+    <p>'M' = Moe, 'L' = Larry, 'C' = Curly, 'S' = Shemp, 'JD' = Joe Derita, 'JB' = Joe Besser</p>
+    <p>'S' = Short, 'F' = Film, ratings (1-10) and episode data courtesy threestooges.net</p>
+    <div class='tableContainer'>
+      <table border='0' width='100%' cellpadding='2'>
+        <th>Name</th>
+        <th>Actors</th>
+        <th>Date</th>
+        <th>Type</th>
+        <th>Duration (min.)</th>
+        <th>Rating</th>
+        <tr *ngFor='let e of _episodes'>
+          <td>{{e.title}}</td>
+          <td>{{e.actors}}</td>
+          <td>{{e.date}}</td>
+          <td>{{e.type}}</td>
+          <td>{{e.duration}}</td>
+          <td>{{e.rating}}</td>
+        </tr>
+      </table>
+    </div>
+  </div>
+</div>
